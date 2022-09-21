@@ -1,0 +1,306 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: 'Titillium Web', sans-serif;
+  transition: all 0.2s ease-in-out;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 0;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-design-background
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gradient-to-b from-design-gradientBlue to-design-gradientDarkBlue;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gradient-to-b from-design-gradientPink to-design-gradientPurple;
+}
+
+svg{
+  min-width: 1rem;
+}
+
+.gradient-1 {
+  @apply bg-gradient-to-r from-design-gradientPink to-design-gradientPurple;
+}
+
+.gradient-2 {
+  @apply bg-gradient-to-r from-design-gradientBlue to-design-gradientDarkBlue;
+}
+
+.gradient-3 {
+  @apply bg-gradient-to-r from-design-gradientPink to-design-gradientDarkPink;
+}
+
+.gradient-4 {
+  @apply bg-gradient-to-r from-design-gradientPurple to-design-gradientPink;
+}
+
+.clip-text {
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.button-1 {
+  @apply text-center font-semibold border border-design-background5 text-design-grey bg-transparent rounded-lg flex items-center justify-center gap-2 px-3 py-1;
+  img{
+    @apply h-5 w-5 object-contain object-center;
+  }
+}
+
+.button-2 {
+  @apply text-center border border-design-pink text-white bg-design-background2 rounded-lg flex items-center justify-center gap-2 px-3 py-1;
+  img{
+    @apply h-5 w-5 object-contain object-center;
+  }
+}
+
+.button-3{
+  @apply text-center text-white bg-design-background2 rounded-lg flex items-center justify-center gap-2 px-3 py-2.5 w-full;
+  img{
+    @apply h-5 w-5 object-contain object-center;
+  }
+}
+
+.button-pools {
+  @apply min-w-fit text-center text-white whitespace-nowrap bg-design-background2 rounded-3xl flex items-center justify-center gap-2 font-semibold px-4 py-2 lg:py-1.5;
+  img{
+    @apply h-5 w-5 object-contain object-center;
+  }
+}
+
+.button-pools-active {
+  @apply min-w-fit text-center text-white bg-design-blue rounded-3xl flex items-center justify-center gap-2 font-semibold px-4 py-2 lg:py-1.5;
+  img{
+    @apply h-5 w-5 object-contain object-center;
+  }
+}
+
+.rounded-button-1{
+  @apply p-1.5 w-8 lg:w-7 rounded-full overflow-hidden aspect-square flex items-center justify-center;
+  svg{
+  @apply w-full h-full object-contain object-center;
+  }
+}
+
+.link-active{
+  @apply text-design-white;
+}
+
+.link-active-2{
+  @apply text-design-white border-b-2 border-design-pink text-design-pink;
+}
+
+
+.card-1{
+  @apply relative bg-design-background2 text-white border border-design-darkBlue lg:shadow-lg rounded-lg p-5;
+}
+
+.card-2{
+  @apply relative bg-design-background5 text-white border border-design-steelBlue shadow rounded-xl p-4;
+}
+
+.card-3{
+  @apply relative bg-design-background5 text-white border border-design-blue shadow rounded-xl p-4;
+}
+
+.card-heading-1 {
+  @apply text-2xl font-semibold;
+}
+
+.card-heading-3 {
+  @apply pb-1 mb-3 flex items-center gap-1.5;
+  img{
+    @apply h-4 w-4 object-contain object-center;
+  }
+}
+
+.card-heading-4 {
+  @apply text-base text-design-grey lg:pb-1 lg:border-b border-design-darkBlue lg:mb-1 flex items-center gap-1.5;
+  img{
+    @apply h-4 w-4 object-contain object-center;
+  }
+}
+
+.flex-0-5{
+  flex: 0.5;
+}
+
+.balance-item{
+  @apply grid grid-cols-2 gap-1 lg:block border-b border-design-darkBlue lg:border-0 pb-1.5 lg:pb-0
+}
+
+.balance-1{
+  @apply flex items-center gap-2;
+  img{
+    @apply h-4 w-4 object-contain object-center;
+  }
+}
+
+.external-link {
+ @apply text-design-blue inline-flex items-center gap-1;
+}
+
+.section-heading-1{
+  @apply text-3xl font-bold flex items-center gap-4;
+  img{
+    @apply h-6 w-6 object-contain object-center;
+  }
+}
+
+.tag-1{
+  @apply text-xs border border-design-darkBlue2 bg-design-background2 flex items-center justify-center gap-1 px-3 py-1 rounded-md;
+  img{
+    @apply h-4 w-4 object-contain object-center;
+  }
+}
+
+.tag-2{
+  @apply text-xs border border-design-darkBlue2 bg-design-background2 flex items-center justify-center gap-1 px-3 py-1 rounded-full;
+  img{
+    @apply h-4 w-4 object-contain object-center;
+  }
+}
+
+.tag-3{
+  @apply text-design-pink bg-design-backgroundPink text-xs flex items-center justify-center gap-1 px-2 py-0.5 rounded-full w-fit;
+  img{
+    @apply h-4 w-4 object-contain object-center;
+  }
+}
+
+.card-icon-1{
+  @apply w-12 h-12 border border-design-darkBlue2 bg-design-background flex items-center justify-center p-2 rounded-md;
+  min-width: 3rem;
+  img{
+    @apply h-full w-full object-contain object-center;
+  }
+}
+
+.card-icon-2{
+  @apply w-12 h-12 border border-design-darkBlue2 bg-design-background flex items-center justify-center rounded-md;
+  min-width: 3rem;
+  img{
+    @apply h-full w-full object-cover object-center;
+  }
+}
+
+input, select{
+  @apply w-full h-full bg-design-darkBlue text-white rounded-lg px-4 py-3 outline-none focus:ring-1 focus:ring-design-blue focus:ring-opacity-80;
+}
+
+select {
+  @apply appearance-none cursor-pointer;;
+}
+
+.select{
+  @apply relative cursor-pointer;
+  div{
+    @apply absolute top-1/2 right-2 transform -translate-y-1/2 text-design-grey;
+    svg{
+      @apply h-4 w-4 object-contain object-center;
+    }
+  }
+}
+
+.select-alt{
+  select{
+    @apply text-sm py-2 px-4 bg-transparent border-2  border-design-background5;
+    min-width: 100px;
+  }
+}
+
+.counter{
+  @apply w-full relative;
+  input{
+    @apply w-full h-full bg-design-darkBlue text-white rounded-lg px-4 py-3 placeholder:text-design-darkBlue2;
+  }
+  div{
+    @apply absolute h-4/5 top-1/2 right-2 text-design-grey rounded overflow-hidden transform -translate-y-1/2  flex flex-col items-center justify-center;
+    button{
+      @apply flex-1 aspect-square bg-design-background3 hover:bg-design-darkBlue2 flex items-center justify-center p-0.5;
+    }
+  }
+}
+
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+th{
+  @apply font-semibold;
+}
+
+tr{
+  @apply py-1 border-b border-design-darkBlue last:border-b-0;
+}
+
+.rewards-table{
+  tr{
+    @apply grid grid-cols-3 gap-1;
+  }
+}
+
+.vesting-table{
+  thead{
+    tr{
+      @apply p-0 pb-2;
+    }
+  }
+  th{
+    @apply text-design-darkBlue2;
+  }
+  tr{
+    @apply grid grid-cols-7 gap-1;
+    img{
+      @apply h-4 w-4 object-contain object-center;
+    }
+  }
+  td{
+    @apply flex items-center gap-2;
+  }
+  button{
+    @apply text-sm;
+  }
+}
+
+.progress-wrapper{
+  @apply relative;
+    svg {
+      @apply block relative w-8 h-8 transform -rotate-90 stroke-design-pink fill-transparent overflow-visible;
+      // stroke-dasharray: 0, 100;
+      stroke-dashoffset: 0;
+      stroke-width: 4px;
+      z-index: 2;
+    }
+    &::after{
+      @apply absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2   border-4 border-design-backgroundPink rounded-full;
+      content: "";
+      width: calc(100% + 4px);
+      height: calc(100% + 4px);
+      z-index: 1;
+    }
+    p{
+      @apply absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white text-xs font-semibold;
+    }
+}
+
+.empty-vesting {
+  height: 400px;
+}
